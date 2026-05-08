@@ -6,6 +6,7 @@ class MultiHeadAttention(nn.Module):
     def __init__(self, embed_size, heads):
         super(MultiHeadAttention, self).__init__()
         self.embed_size = embed_size
+        self.embed_size = embed_size
         self.heads = heads
         # 每个注意力头的维度
         self.head_dim = embed_size // heads
